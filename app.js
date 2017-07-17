@@ -8,7 +8,7 @@ app.all('/*', function(req, res, next) {
 });
 
 app.get('/items', function (req, res) {
-  res.send({author : author, categories: ['Categoria 1','Categoria 2'],items:[x1,x2]})
+  res.send({author : author, categories: ['Categoria 1','Categoria 2'],items:[x1,x2,x3,x4]})
 })
 
 app.get('/items/:id', function (req, res) {
@@ -54,4 +54,32 @@ var x2 ={
       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
   }
 
-var produtosMap = {'X1':x1,'X2':x2}
+var x3 ={
+      "id":"X3",
+      "title":"Titulo 3",
+      "price":{
+        "currency": "R$",
+        "amount":3300,
+        "decimals":88
+      },
+      "picture":"http://lorempixel.com/150/150/sports/",
+      "condition":"a vista",
+      "free_shipping":true,
+      "sold_quantity":1,
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  }
+var x4 ={
+      "id":"X4",
+      "title":"Titulo 4",
+      "price":{
+        "currency": "R$",
+        "amount":4400,
+        "decimals":88
+      },
+      "picture":"http://lorempixel.com/150/150/sports/",
+      "condition":"a vista",
+      "free_shipping":true,
+      "sold_quantity":1,
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  }
+var produtosMap = {'X1':x1,'X2':x2,'X3':x3,'X3':x3}
